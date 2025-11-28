@@ -24,7 +24,7 @@
         except Exception as e2:
             LOG.error("Failed to write medal tally via Spark CSV as well: %s", e2)
 
-    # 2) Athlete career summary (collect small-ish summary to CSV)
+    # 2) Athlete career summary (collect small summary to CSV)
     agg_exprs = []
     if "is_medalist" in athlete_df.columns:
         agg_exprs += [F.sum("is_medalist").cast("int").alias("total_medals")]
@@ -77,3 +77,4 @@
         top_countries_all_time.toPandas().to_csv(f"{out_top_path}/top_countries_all_time.csv", index=False)
     except Exception as e:
         LOG.warning("Could not collect top countries: %s", e)
+
