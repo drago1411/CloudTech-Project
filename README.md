@@ -3,7 +3,7 @@ Author: Hareeshwar & Lokeshwar
 Dataset: 120 Years of Olympic History — Athletes & Results
 Tools: PySpark, Python, Pandas, Seaborn, Matplotlib, JupyterLab
 
-1. Project Overview
+Project Overview:
 This project performs end-to-end data engineering and analytics on the 120 Years of Olympic History dataset using PySpark for the ETL pipeline
 and Python (Pandas, Seaborn, Matplotlib) for dashboards and insights.
 The goal of the project is to:
@@ -16,7 +16,7 @@ Generate insights such as:
 -Produce visualization figures for final reporting and dashboarding
 -Provide reproducible scripts and a clear project structure
 
-clouddataset-olympic-analysis/
+clouddataset-olympic-analysis
 │
 ├── data/                          # Raw CSV files (NOT in GitHub)
 │   ├── athlete_events.csv
